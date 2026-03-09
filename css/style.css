@@ -1,1 +1,39 @@
-*{box-sizing: border-box;}
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        "navbar navbar"
+        "area1 area2"
+        "area3 area4";
+        
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.area-navbar{
+    grid-area: navbar;
+}
+
+.area1{
+    grid-area: area1;
+    background: lightblue;
+    padding: 40px;
+}
+
+.area2{
+    grid-area: area2;
+    background: lightgreen;
+    padding: 40px;
+}
+
+.area3{
+    grid-area: area3;
+    background: lightcoral;
+    padding: 40px;
+}
+
+.area4{
+    grid-area: area4;
+    background: lightgoldenrodyellow;
+    padding: 40px;
+}
