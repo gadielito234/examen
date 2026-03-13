@@ -1,34 +1,72 @@
-.grid-container{
-    display: grid;
-    grid-template-areas:
-        "navbar navbar navbar"
-        "area1 content content"
-        "area1 content content";
-        
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px;
+.fondo {
+    background-color: #f8f9fa;
     padding: 20px;
 }
-.fondo{
-    background-color: black;
-}
-.area-navbar{
-    grid-area: navbar;
-    background-color: black;
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        "navbar navbar"
+        "contenido contenido";
+    grid-template-columns: 200px 1fr;
+    gap: 15px;
 }
 
-.area1{
+.area-navbar { grid-area: navbar; background: #fff; border-bottom: 2px solid #eee; }
+.area1 { grid-area: area1; background: #eee; border-radius: 8px; }
+.content { grid-area: contenido; }
+
+.titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.img-ajustada {
+    height: 450px;
+    object-fit: contain;
+    background-color: white;
+}
+
+.carousel-inner {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas: "navbar" "contenido" "area1";
+        grid-template-columns: 1fr;
+    }
+}
+.area1 {
     grid-area: area1;
-    background: lightblue;
-    padding: 40px;
+    background: #ffffff; 
+    border-radius: 12px;
+    border: 1px solid #e9ecef;
+    height: fit-content; 
 }
 
-.content{
-    grid-area: content;
-    background: black;
-    padding: 40px;
+.list-group-item {
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
 }
-.h5{
-color: black;
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    color: #007bff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+.area1 h5 {
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
 }
