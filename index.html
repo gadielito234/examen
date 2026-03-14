@@ -1,47 +1,149 @@
-<footer class="footer">
-  <div class="footer-container">
- 
-    <div class="footer-column">
-      <h4>Shop</h4>
-      <ul>
-        <li><a href="#">Phones</a></li>
-        <li><a href="#">Tablets</a></li>
-        <li><a href="#">TV & Audio</a></li>
-        <li><a href="#">Appliances</a></li>
-      </ul>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Teléfonos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+#GADIEL
+
+<body class="fondo">
+
+  <div class="grid-container">
+    <nav class="navbar area-navbar">
+      <div class="container-fluid d-flex flex-column align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="https://th.bing.com/th/id/OIP.oFMKBOLb7P2lFeb_t5kshwHaEf?w=296&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+            alt="Logo" width="120">
+        </a>
+        <h1 class="titulo">TELÉFONOS DISPONIBLES</h1>
+      </div>
+    </nav>
+
+    <div class="area1">
     </div>
- 
-    <div class="footer-column">
-      <h4>Support</h4>
-      <ul>
-        <li><a href="#">Help Center</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a href="#">Warranty</a></li>
-        <li><a href="#">Manuals</a></li>
-      </ul>
+
+    <div class="content">
+      <div id="carouselPhones" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselPhones" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#carouselPhones" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#carouselPhones" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner shadow">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.SqOSr4N93T76SyBECwy9gAHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain&o=7&rm=3"
+              class="d-block w-100 img-ajustada" alt="S24 Ultra">
+            <div class="carousel-caption">
+              <span class="badge bg-dark">Samsung S24 Ultra</span>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://th.bing.com/th/id/OIP.kmWCEO1J1fIjU3REtzQ_fgHaHa?w=184&h=185&c=7&r=0&o=7&pid=1.7&rm=3"
+              class="d-block w-100 img-ajustada" alt="A32">
+            <div class="carousel-caption">
+              <span class="badge bg-dark">Samsung Galaxy A32</span>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="https://th.bing.com/th/id/OIP.6WrcyKdOubLrNXazt-z-VQHaEK?w=284&h=180&c=7&r=0&o=7&pid=1.7&rm=3"
+              class="d-block w-100 img-ajustada" alt="Fold">
+            <div class="carousel-caption">
+              <span class="badge bg-dark">Samsung Galaxy Fold</span>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhones" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPhones" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
     </div>
- 
-    <div class="footer-column">
-      <h4>About Us</h4>
-      <ul>
-        <li><a href="#">Company Info</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Newsroom</a></li>
-      </ul>
-    </div>
- 
-    <div class="footer-column">
-      <h4>Follow Us</h4>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">YouTube</a></li>
-      </ul>
-    </div>
- 
   </div>
- 
-  <div class="footer-bottom">
-    <p>© 2026 Samsung Demo Footer. All rights reserved.</p>
-  </div>
-</footer>
+  <aside class="area1 p-3">
+    <h5 class="mb-4">Filtrar por:</h5>
+
+    <div class="mb-4">
+      <input type="text" class="form-control form-control-sm" placeholder="Buscar modelo...">
+    </div>
+
+    <ul class="list-group list-group-flush shadow-sm rounded">
+      <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        Samsung <span class="badge bg-primary rounded-pill">12</span>
+      </li>
+      <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        Apple <span class="badge bg-primary rounded-pill">8</span>
+      </li>
+      <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+        Xiaomi <span class="badge bg-primary rounded-pill">5</span>
+      </li>
+      <li class="list-group-item list-group-item-action">Gama Alta</li>
+      <li class="list-group-item list-group-item-action">Ofertas</li>
+    </ul>
+
+    <div class="mt-4 p-3 bg-warning rounded text-center shadow-sm">
+      <strong>Envío Gratis</strong>
+      <p class="small mb-0">En compras mayores a $200</p>
+    </div>
+  </aside>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  #Eliza
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-column">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#">Phones</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">TV & Audio</a></li>
+          <li><a href="#">Appliances</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Manuals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#">Company Info</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Newsroom</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Samsung Demo Footer. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
